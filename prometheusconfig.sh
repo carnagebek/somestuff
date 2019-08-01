@@ -1,10 +1,8 @@
 #!/bin/bash
 
-yum update && yum install wget
 useradd --no-create-home --shell /bin/false prometheus
 mkdir /etc/prometheus
 mkdir /var/lib/prometheus
-#apt update && apt install wget tar -y
 wget -P /root/ https://github.com/prometheus/prometheus/releases/download/v2.11.1/prometheus-2.11.1.linux-amd64.tar.gz
 tar -C /root/ -xvzf /root/prometheus-2.11.1.linux-amd64.tar.gz
 mv /root/prometheus-2.11.1.linux-amd64 /root/prometheus-files
