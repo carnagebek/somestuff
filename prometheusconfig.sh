@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 useradd --no-create-home --shell /bin/false prometheus
 mkdir /etc/prometheus
